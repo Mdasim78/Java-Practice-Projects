@@ -5,13 +5,16 @@ import org.w3c.dom.css.Counter;
 public class StaticKeyword {
 	
 /*
-Static keyword it used to make a member belong to class note to any individual objects 
+Static keyword it used to make a member belong to the entire class not to any specific object 
 We can have static variables, static methods and static blocks 
-Starting variables are class level variables that are used to keep a value across all the instances of a class they are initialized when the class gets loaded 
-Static methods are class level methods that can be called without any instance of the class they can be called into class name or simply by method name 
+Static variables are class level variables that are used to keep a value across all the instances of a class they are initialized when the class gets loaded 
+Static methods are class level methods that can be called without any instance of the class they can be called by class name or simply by method name 
  */
 
-
+/*
+Order of execution
+Static variables (in declaration order) >> Static blocks (in declaration order) >> Main method (when the program starts) >> Static methods (only when explicitly called)
+*/
 	
 	//instance and static variable
 	 int counter1 = 0;
@@ -48,7 +51,7 @@ Static methods are class level methods that can be called without any instance o
 	}
 /*
  	Static block is special type of block in Java which gets executed in the class is loaded in JVM.
- 	static block is used for initializing static variables. Compilation error of course we try to initialize non-static variable in static block 
+ 	static block is used for initializing static variables. Compilation error occurs when we try to initialize non-static variable in static block 
  	Static block will get executed when an object is created or when first time a static member of the class is accessed 
  	A class can have multiple static blocks and they are executed in the sequence they are written 
  	Static block cannot return a value 
