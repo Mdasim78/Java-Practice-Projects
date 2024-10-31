@@ -8,14 +8,14 @@ public class JavaClassConcepts {
 	//Constructor is a special method in Java whose name is same as class name and it is used to create the object. 
 	//Constructor can be parameterized or non parameterized if any argument is passed to the constructor it is parameterized and if not it is non parameterized below is a non parameterized constructor
 	public JavaClassConcepts() {
-		System.out.println("Parameter less constructor ");
+		System.out.println("Parameter less constructor");
 	}
 	
 	//Parameterized constructor 
 	public JavaClassConcepts(String str1, int i) {
-		this();  //We can call one constructor in another constructor for that called constructor should be the fast line And Constructor can be called using this keyword 
+		this();  //We can call one constructor in another constructor, for that the called-constructor should be the fast line And Constructor can be called using this keyword 
 		System.out.println("Parameterized constructor ");
-		this.str1 = str1; //Here this.str1 refers to current object attribute and we are passing local str1 value to the attribute. Clear this keyword is necessary otherwise the value will not be passed to the attribute because str1 without this keyword refers to local variable 
+		this.str1 = str1; //Here this.str1 refers to current object attribute and we are passing local str1 value to the attribute. this keyword is necessary otherwise the value will not be passed to the attribute because str1 without this keyword refers to local variable 
 		num1 = i;  //When local variable name and instance variable name is not same we don't need to write this keyword 
 		
 	}
