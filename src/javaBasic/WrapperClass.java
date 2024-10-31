@@ -2,7 +2,7 @@ package javaBasic;
 
 public class WrapperClass {
 	public static void main(String[] args) {
-		int num1 = 10;
+		int num1 = 20;
 		Integer wrappedInt = num1;         // autoboxing -- automatic conversion of primitive data type into its corresponding wrapper class 
 		int unwrappedInt = wrappedInt;     //unboxing -- Automatic conversion of wrapper class object to its corresponding primitive data type 
 		System.out.println(unwrappedInt);  
